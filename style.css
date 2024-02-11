@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D);
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+header{
+    background-color: brown;
+    padding: 20px;
+    color: #fff;
+    border-radius: 5px;
+}
+header h1{
+    font-size: 36px;
+}
+main{
+    min-height: 80vh;
+    padding: 20px;
+    max-width: 800;
+    margin: 0 auto;
+
+}
+main form{
+    display: flex;
+    justify-content: center;
+}
+input{
+    flex-grow: 1;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px;
+}
+button{
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: brown;
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 6px;
+} 
+
+.result p{
+    margin-top: 10px;
+}
+.result{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.result p[class="partOfSpeech"]{
+    font-style: italic;
+    color: #808080;
+    margin-top: 2px;
+}
+.result div{
+    margin-top: 20px;
+}
+.result div a{
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: brown;
+}
+.result li{
+    padding: 10px;
+    margin-left: 20px;
+}
+@media screen and (max-width:330px) {
+    main form{
+       flex-direction: column;
+    }
+    form button[type="submit"]{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
